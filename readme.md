@@ -1,4 +1,5 @@
 ### baconevaluation
+[![Build Status](http://build.eberlein.io:8080/job/android_baconevaluation/badge/icon)](http://build.eberlein.io:8080/job/android_baconevaluation/)
 #### why?
 so we don't buy bacon again which wasn't that great.
 #### features
