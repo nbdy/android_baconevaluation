@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_product"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/baseline_camera_black_48"
+        android:layout_width="256dp"
+        android:layout_height="256dp"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_below="@id/iv_product"
+        android:hint="@string/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_lbl_code_format"
+        android:layout_below="@id/et_name"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:labelFor="@id/et_code_format"
+        android:text="@string/code_format"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_code_format"
+        android:layout_below="@id/tv_lbl_code_format"
+        android:layout_width="128dp"
+        android:inputType="none"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_lbl_code"
+        android:layout_below="@id/et_name"
+        android:layout_toEndOf="@id/et_code_format"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:labelFor="@id/et_code"
+        android:text="@string/code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_code"
+        android:layout_below="@id/tv_lbl_code"
+        android:layout_toEndOf="@id/et_code_format"
+        android:layout_marginStart="8dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:inputType="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_lbl_rating"
+        android:layout_below="@id/et_code_format"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="8dp"
+        android:labelFor="@id/sb_rating"
+        android:text="@string/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <SeekBar
+        android:id="@+id/sb_rating"
+        android:layout_below="@id/tv_lbl_rating"
+        android:max="100"
+        android:layout_toStartOf="@id/tv_rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_alignBaseline="@id/tv_lbl_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_description"
+        android:layout_below="@id/sb_rating"
+        android:layout_marginTop="8dp"
+        android:hint="@string/description"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

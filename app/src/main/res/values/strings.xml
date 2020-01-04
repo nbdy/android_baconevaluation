@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">baconevaluation</string>
+    <string name="name">name</string>
+    <string name="code">code</string>
+    <string name="code_format">code format</string>
+    <string name="rating">rating</string>
+    <string name="description">description</string>
+    <string name="delete">delete</string>
+</resources>
